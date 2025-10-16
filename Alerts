@@ -1,0 +1,35 @@
+# 📣 Real-Time Alerts Architecture for Error Logging Service
+
+## **Overview**
+
+The **Real-Time Alerts** system ensures that critical errors captured by SDKs are immediately communicated to developers via email and optionally other channels like Slack or webhooks.  
+Alerts are integrated with the backend processing pipeline and support multi-tenant and role-based configurations.
+
+---
+
+## **1. Goals**
+
+| Goal | Description |
+|------|-------------|
+| **Immediate Notification** | Notify developers as soon as a critical error occurs. |
+| **Multi-Channel Support** | Email, Slack, Teams, or webhook notifications. |
+| **Configurable Thresholds** | Allow users to define which errors trigger alerts. |
+| **Tenant Isolation** | Alerts scoped per project or organization. |
+| **Reliable Delivery** | Ensure alerts are delivered even under high load or transient failures. |
+| **Alert History & Audit** | Keep a record of sent alerts for review and troubleshooting. |
+
+---
+
+## **2. Recommended Technologies**
+
+| Component | Technology | Justification |
+|-----------|------------|---------------|
+| **Email Delivery** | SendGrid / Amazon SES / Postmark | Reliable, scalable email delivery service with templating. |
+| **Message Queue** | RabbitMQ / Kafka | Decouple alert generation from sending for reliability and scalability. |
+| **Backend Service** | NestJS worker or microservice | Processes alert events and sends notifications. |
+| **Templating** | Handlebars / MJML | Customizable email templates with dynamic data. |
+| **Monitoring** | Prometheus / Grafana | Track alert delivery success, failures, and latency. |
+| **Retries & Dead Letter Queue** | Built-in MQ or custom worker logic | Ensure transient failures are retried without losing alerts. |
+
+---
+
