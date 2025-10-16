@@ -1,4 +1,4 @@
-# 🖥 Web Dashboard Architecture for Error Logging Service
+# Web Dashboard Architecture for Error Logging Service
 
 ## **Overview**
 
