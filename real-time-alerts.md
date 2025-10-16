@@ -1,4 +1,4 @@
-# 📣 Real-Time Alerts Architecture for Error Logging Service
+# Real-Time Alerts Architecture for Error Logging Service
 
 ## **Overview**
 
