@@ -1,4 +1,4 @@
-# ⚙️ DevOps Architecture for Error Logging Service
+# DevOps Architecture for Error Logging Service
 
 ## **Overview**
 
