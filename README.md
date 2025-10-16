@@ -1,4 +1,4 @@
-# 📚 Error Logging Service - Documentation Hub
+# Error Logging Service - Documentation Hub
 
 **This repository contains the architecture documentation for a test task at `develops-today`.**  
 It covers all components of the error logging platform: Client SDKs, API Backend, Web Dashboard, DevOps, and Real-Time Alerts.
