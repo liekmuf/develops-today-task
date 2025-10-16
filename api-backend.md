@@ -1,4 +1,4 @@
-# 🛠 API Backend Architecture for Error Logging Service
+# API Backend Architecture for Error Logging Service
 
 ## **Overview**
 
