@@ -1,4 +1,4 @@
-# 🧩 Client SDK Architecture for Error Logging Service
+# Client SDK Architecture for Error Logging Service
 
 ## **Overview**
 
